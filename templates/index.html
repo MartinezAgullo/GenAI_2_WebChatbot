@@ -1,0 +1,43 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Interface</title>
+</head>
+<body>
+    <h1>Chat with the Bot</h1>
+    <form id="chat-form">
+        <input type="text" id="user_input" name="user_input" placeholder="Type your message..." required>
+        <button type="submit">Send</button>
+    </form>
+    <div id="chat-history"></div>
+
+    <script>
+        const form = document.getElementById('chat-form');
+        const chatHistoryDiv = document.getElementById('chat-history');
+
+        form.onsubmit = async (e) => {
+            e.preventDefault();
+
+            const userInput = document.getElementById('user_input').value;
+            
+            const response = await fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(new FormData(form))
+            });
+
+            const data = await response.json();
+
+            // Append user input and bot response to chat history
+            chatHistoryDiv.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
+            chatHistoryDiv.innerHTML += `<p><strong>Bot:</strong> ${data.response}</p>`;
+
+            // Clear input field
+            form.reset();
+        };
+    </script>
+</body>
+</html>
