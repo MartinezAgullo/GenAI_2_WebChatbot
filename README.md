@@ -22,4 +22,4 @@ GenAI_2_WebChatbot
 The app looks like:
 
 <!--![css result](https://github.com/MartinezAgullo/GenAI_2_WebChatbot/blob/main/Interface.png)-->
-<img src="(https://github.com/MartinezAgullo/GenAI_2_WebChatbot/blob/main/Interface.png" alt="css result" width="200"/>
+<img src="https://github.com/MartinezAgullo/GenAI_2_WebChatbot/blob/main/Interface.png" alt="css result" width="200"/>
