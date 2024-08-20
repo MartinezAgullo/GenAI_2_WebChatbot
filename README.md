@@ -1,5 +1,5 @@
 # ChatGPT-like Website
-Simple Chatbot with Open Source LLMs using Python and Hugging Face
+Simple Chatbot with Open Source LLMs using Python and Hugging Face.
 Flask is used for hosting the backend service.
 
  - `chatbot_InLine.py`: Chatbot based  in"[facebook/blenderbot-400M-distill](https://huggingface.co/facebook/blenderbot-400M-distill)". This choice is motivated because it has an open-source license and runs relatively fast
