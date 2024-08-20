@@ -8,7 +8,7 @@ Flask is used for hosting the backend service.
 
 For alternative models, check the Hugging Face options in the website https://huggingface.co/models
 
-
+<!--
 GenAI_2_WebChatbot
 ├── chatbot_App.py                 # The main Flask application script
 ├── chatbot_InLine.txt             # To run in terminal
@@ -17,4 +17,4 @@ GenAI_2_WebChatbot
 └── static/
     ├── styles.css                 # CSS file for styling the interface
     └── scripts.js                 # JavaScript for handling user interactions
-
+-->
