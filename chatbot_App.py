@@ -32,7 +32,9 @@ def index():
         outputs = model.generate(**inputs)
 
         # Decode the response
-        response = tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
+        #response = tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
+        response = tokenizer.decode(outputs[0], skip_special_tokens=True, clean_up_tokenization_spaces=True).strip()
+
 
         # Add interaction to conversation history
         conversation_history.append(user_input)
@@ -54,4 +56,5 @@ def reset_conversation():
 # Run the app
 if __name__ == "__main__":
     print("Start")
-    app.run(debug=True)
+    app.run(debug=True, host="127.0.0.1")
+    #app.run(debug=True)

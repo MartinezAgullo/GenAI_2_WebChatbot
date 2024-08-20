@@ -18,3 +18,7 @@ GenAI_2_WebChatbot
     ├── styles.css                 # CSS file for styling the interface
     └── scripts.js                 # JavaScript for handling user interactions
 -->
+
+The app looks like:
+
+![css result](https://github.com/MartinezAgullo/GenAI_2_WebChatbot/blob/main/Interface.png)
